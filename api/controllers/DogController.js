@@ -7,8 +7,10 @@
 
 module.exports = {
 
-  find: function(req, res){
-    res.view('dogs/find');
+  index: function(req, res){
+    Dog.find().then(function(dogs){
+      res.view
+    });
   }
 
 };
